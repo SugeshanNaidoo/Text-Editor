@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <button onclick="makeBold()">B</button>
+    <button onclick="makeItalic()">I</button>
+    <label for="fontSelector">Font:</label>
+    <select id="fontSelector" onchange="changeFont()">
+	  <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="Impact">Impact</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Lucida Console">Lucida Console</option>
+      <option value="Palatino Linotype">Palatino Linotype</option>
+      <option value="Trebuchet MS">Trebuchet MS</option>
+      <option value="Garamond">Garamond</option>
+      <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+      <option value="Bookman Old Style">Bookman Old Style</option>
+      <option value="Copperplate">Copperplate</option>
+      <option value="Brush Script MT">Brush Script MT</option>
+      <option value="Century Gothic">Century Gothic</option>
+      <option value="Rockwell">Rockwell</option>
+      <option value="Cambria">Cambria</option>
+      <option value="Courier">Courier</option>
+      <option value="MS Gothic">MS Gothic</option>
+      <option value="Arial Black">Arial Black</option>
+      <option value="Segoe UI">Segoe UI</option>
+      <option value="SimSun">SimSun</option>
+      <option value="Impact">Impact</option>
+    </select>
+    <label for="colorSelector">Color:</label>
+    <select id="colorSelector" onchange="changeColor()">
+	  <option value="#000000">Black</option>
+      <option value="#ff0000">Red</option>
+      <option value="#00ff00">Green</option>
+      <option value="#0000ff">Blue</option>
+      <option value="#ffff00">Yellow</option>
+      <option value="#ff00ff">Magenta</option>
+      <option value="#00ffff">Cyan</option>
+      <option value="#800080">Purple</option>
+      <option value="#ff4500">OrangeRed</option>
+      <option value="#008080">Teal</option>
+    </select>
+  </div>
+
+  <div id="editor-container">
+    <div id="editor" contenteditable="true"></div>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+</body>
+</html>
+
+
